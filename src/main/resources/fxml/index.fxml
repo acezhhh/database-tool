@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.acezhhh.tool.controller.IndexController">
+    <children>
+        <Label layoutX="232.0" layoutY="157.0" text="地　址"/>
+        <Button layoutX="365.0" layoutY="498.0" mnemonicParsing="false" onAction="#connect" text="连  接"/>
+        <TextField fx:id="url" layoutX="326.0" layoutY="151.0"/>
+        <TextField fx:id="userName" layoutX="327.0" layoutY="351.0"/>
+        <Label layoutX="233.0" layoutY="357.0" text="账　号 "/>
+        <Label layoutX="234.0" layoutY="434.0" text="密　码"/>
+        <TextField fx:id="port" layoutX="327.0" layoutY="219.0"/>
+        <Label layoutX="233.0" layoutY="225.0" text="端　口"/>
+        <Label layoutX="233.0" layoutY="288.0" text="数据库"/>
+        <TextField fx:id="dataBase" layoutX="327.0" layoutY="282.0"/>
+        <PasswordField fx:id="passWord" layoutX="325.0" layoutY="428.0"/>
+        <ImageView fx:id="logo" fitHeight="107.0" fitWidth="182.0" layoutX="328.0" layoutY="29.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../images/index.png"/>
+            </image>
+        </ImageView>
+    </children>
+    <children>
+        <AnchorPane fx:id="loadingPane" prefHeight="600.0" prefWidth="800.0"
+                    style="-fx-background-color: rgba(0,0,0,0.31)">
+            <children>
+                <fx:include source="loading.fxml"/>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

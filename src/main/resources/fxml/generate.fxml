@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane onDragDetected="#exportWord" prefHeight="600" prefWidth="800" stylesheets="/css/generate.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.acezhhh.tool.controller.GenerateController">
+    <children>
+        <TableView fx:id="tableView" layoutX="56.0" layoutY="87.0" prefHeight="381.0" prefWidth="689.0" />
+        <Button layoutX="640.0" layoutY="504.0" mnemonicParsing="false" onAction="#exportWord" text="导出word" />
+        <TextField fx:id="text" layoutX="56.0" layoutY="34.0" />
+        <Button layoutX="124.0" layoutY="504.0" mnemonicParsing="false" onAction="#batchSelect" text="反选" />
+        <Button layoutX="56.0" layoutY="504.0" mnemonicParsing="false" onAction="#batchSelect" text="全选" />
+        <Button layoutX="545.0" layoutY="504.0" mnemonicParsing="false" onAction="#returnPage" text="返回" />
+    </children>
+    <children>
+        <AnchorPane fx:id="loadingPane" prefHeight="600.0" prefWidth="800.0"
+                    style="-fx-background-color: rgba(0,0,0,0.31)">
+            <children>
+                <fx:include source="loading.fxml"/>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

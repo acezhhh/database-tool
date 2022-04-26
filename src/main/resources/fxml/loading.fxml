@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.acezhhh.tool.controller.LoadingController">
+    <children>
+        <ImageView fx:id="imageView" fitHeight="200.0" fitWidth="250.0" layoutX="300.0" layoutY="194.0"
+                   pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../images/loading.gif"/>
+        </image>
+        </ImageView>
+        <Label layoutX="359.0" layoutY="374.0" prefHeight="24.0" prefWidth="82.0" text="加载中..." textFill="WHITE"/>
+    </children>
+</AnchorPane>
